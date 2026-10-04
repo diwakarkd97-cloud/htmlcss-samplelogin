@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e5dada; 
+    padding: 20px;
+}
+
+.container {
+    background-color: rgb(223, 208, 208);
+    width: 100%;             
+    max-width: 3000px;      
+    min-height: 100vh;       
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+
+.form-container {
+    display: flex;
+    gap: 60px; 
+    flex: 1;  
+}
+
+
+.leftside {
+    flex: 1; 
+    display: flex;
+}
+
+.leftside img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* --- Right Side (Form) --- */
+.rightside {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-list {
+    list-style: none;
+    width: 100%;
+}
+
+.form-list li {
+    margin-bottom: 25px; 
+}
+
+.form-list input {
+    width: 100%;
+    padding: 18px;     
+    font-size: 60px;   
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-list input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); 
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.button-container button {
+    flex: 1;
+    padding: 18px 20px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.submit-btn {
+    background-color: white;
+    color: red;
+}
+
+.submit-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.cancel-btn {
+    background-color: #8B0000; 
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #660000;
+}
