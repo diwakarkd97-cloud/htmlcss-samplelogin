@@ -5,32 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Workshop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Web Development Workshop</h1>
-        <h2>Number of available seats: 23</h2> 
-      
-        <div class="form-container">
+        
+        <div class="header">
+            <h1>Web Development Workshop</h1>
+            <h2>Number of available seats: 23</h2>
+        </div>
+        
+        <div class="form-wrapper">
+
             <div class="leftside">
-                <img src="./img.jpg" alt="Workshop Image">     
+                <img src="./img.png" alt="Developer Illustration">
             </div>
             
+            
             <div class="rightside">
-                <ul class="form-list">
-                    <li><input type="text" placeholder="Username"></li>
-                    <li><input type="email" placeholder="Email"></li>
-                    <li><input type="text" placeholder="Phone No"></li>
-                    <li><input type="text" placeholder="Choose no of seats"></li>
-                    <li><input type="text" placeholder="Second username"></li>
+                <form action="#">
                     
-                    <li class="button-container">
-                        <button class="submit-btn">Submit</button>
-                        <button class="cancel-btn">Cancel</button>
-                    </li>
-                </ul>
+                    <div class="input-group">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" placeholder="Phone No">
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <input type="text" placeholder="Choose no of seats">
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <input type="text" placeholder="Second username">
+                    </div>
+                    
+                    <div class="button-container">
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <button type="button" class="cancel-btn">Cancel</button>
+                    </div>
+                    
+                </form>
             </div>
-        </div>  
+        </div>
+        
     </div>
 </body>
 </html>
