@@ -119,7 +119,7 @@ form {
 .button-container button {
     flex: 1;
     padding: 2.5vh; 
-    border-radius: 30px; 
+    border-radius: 20px; 
     font-size: 2vw; 
     cursor: pointer; 
     transition: all 0.3s ease; 
@@ -144,4 +144,27 @@ form {
 
 .cancel-btn:hover {
     background-color: #dcdcdc; 
+}
+@media(max-width:650px)  {
+    .header h1{
+        font-size: 32px;
+    }
+    .header h2{
+        font-size:16px;
+    }
+    .leftside img{
+        max-height:120px;
+    }
+    .form-wrapper{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .input-group input{
+        font-size:14px;
+    }
+    .button-container button{
+        width: 50%;
+        font-size: 15px;
+    }
 }
